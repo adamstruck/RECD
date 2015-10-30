@@ -1,0 +1,28 @@
+Package: RECD
+Type: Package
+Title: Repeat Exansion & Contraction Detection
+Version: 0.0.2
+Date: 2013-11-18
+Author: Adam Struck
+Maintainer: <struck@uoregon.edu>
+Description: This package uses the .dat output file from Tandem Repeat Finder
+    (G. Benson, Nucleic Acids Research, 1999). Recommended parameters are "2 12
+    12 80 10 16 8 -d". A python executable is provided in the package that will
+    parse the .dat file produced by TRF and output it in a useable tsv format.
+Depends:
+    RSQLite,
+    GenomicRanges
+Collate:
+    'RepeatsInRegion.R'
+    'mapATR.R'
+    'dbCreateRepeatsTable.R'
+    'processLastAlignedBase.R'
+    'mergeSampleData.R'
+    'compareSampleGroups.R'
+    'calculatePercentFacing.R'
+    'edgeRAnalysis.R'
+    'makeDEXSeqTables.R'
+    'makeEdgeRTables.R'
+    'DEXSeqAnalysis.R'
+    'openOutputFileHandle.R'
+    'calculateIRLs_jointMLE.R'
